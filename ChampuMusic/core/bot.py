@@ -1,6 +1,7 @@
+import asyncio
 import uvloop
 
-uvloop.install()
+asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
 import pyrogram
 from pyrogram import Client
