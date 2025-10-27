@@ -1,6 +1,7 @@
 import asyncio
-import importlib
+import uvloop
 
+asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 from pyrogram import idle
 
 import config
